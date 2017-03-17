@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Áudio e Vídeo</title>
+	<script src='jquery-3.1.1.min.js' type="text/javascript"></script>
+<style type="text/css">
+	    p{
+	    	color: #FFF;
+	    	display: block;
+	    	height: 30px;
+	    	background-color: #333;
+	    	font-weight: bold;
+	    	text-align: center;
+	    }
+	</style>
+</head>
+<body>
+<p>Áudio</p>
+<audio controls id="som">
+	
+	<source src="run_it.mp3" type="audio/mpeg" />
+	<p>Seu navegador não tem suporte a Áudio HTML5</p>
+</audio>
+<div>
+	<input type="button" value="Stop" id="stopAudio" />
+	<input type="button" value="Play" id="playAudio" />
+	<input type="button" value="Pause" id="pauseAudio" />
+	<input type="button" value="Reiniciar" id="reiniciarAudio" />
+	<input type="button" value="Volume +" id="vMaisAudio" />
+	<input type="button" value="Volume -" id="vMenosAudio" />
+	<input type="button" value="Mudo" id="vMudoAudio" />
+	<input type="button" value="Proxima" id="prox" />
+	<input type="button" value="Anterior" id="ant" />
+</div>
+<div>
+	<ul id="playlist">
+		<li>French Montana - Moses</li>
+		<li>Chris Brown - Run It</li>
+		<li>Pacificadores - A Noite Me Chama</li>
+		<li>DJ Khaled - Gold Slugs</li>
+		<li>Chris Brown - Gimme That</li>
+		<li>Snoop Dogg - Law Low </li>
+		<li>Usher - Love In This Club</li>
+		<li>Kevin Gates - Pride</li>
+		<li>Lil Dicky - Save That Money</li>
+	</ul>
+</div>
+<input type="range" min="0" max="1" step="0.1" default="1"
+	value="1" id="vRangeAudio">
+
+<p>VÍDEO</p>
+<video controls poster="img.png">
+	<source src="video.ogv" type="video/ogg" />
+	<source src="video.mp4" type="video/mp4" />
+	<source src="video.webm" type="video/webm" />
+	<p>Seu navegador não tem suporte a Vídeo HTML5</p>
+</video>
+
+
+<script type="text/javascript" src="scripts.js"></script>
+</body>
+</html>
